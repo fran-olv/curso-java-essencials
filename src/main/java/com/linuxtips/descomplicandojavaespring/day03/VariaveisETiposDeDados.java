@@ -4,39 +4,46 @@ public class VariaveisETiposDeDados {
 
     public static void main(String[] args) {
 
-        //valores inteiros ou negativos requer 8 bits, máximo é 127 e mínimo é 128
-        byte meuByte = 127;
-        System.out.println("meu byte   " + meuByte);
+		// Byte valores inteiros ou negativos, requer 8 bits,
+		// maximo 127 minimo -128 (valores fora precisa colocar em int)
+		byte meuByte = 127;
+		System.out.println("meu byte" + meuByte);
 
-        //dobro de bit do bit, min de -32.768  e max 32.767.
-        short meuShort = 32767;
-        System.out.println("meu short   " +meuShort);
+		// Short suporta o dobro de bits do byte = 16bits
+		// min -32678 e max 32767
+		short meuShort = 32767;
+		System.out.println("meu Short" + meuShort);
 
-        //usa 32 bits, minimo de -2.147.483.648 e max de 2.147.483.647
-        int idade = 25;
-        System.out.println("meu int   " +idade);
+		// 32 bits de memoria (mais custoso)
+		// min 2147483648 e max 2147483647
+		int idade = 15;
+		System.out.println("idade" + idade);
 
-        //64 bits
-        long meuLong = 10L;
-        System.out.println("meu long   "+ meuLong);
+		//64 bits
+		long meuLong = 10L;
+		System.out.println("meu long" + meuLong);
 
 
-        //dupla precisao, 64 bits
-        double salario = 102.51;
-        System.out.println("meu double    "+ salario);
+		//64 bits e 2 casas deciamais de precisao ocupa + memoria
+		double salario = 102.51;
+		System.out.println("meu double" + salario);
 
-        //precisao simples, 32 bits,
-        float salarioFloat = 102.52F;
-        System.out.println("meu float   "+salarioFloat);
+		// 32 bits, precisao simples
+		float salarioFloat = 102.51F;
+		System.out.println("meu float" + salarioFloat);
 
-        //16 bits, um unico unicode
-        char letra = 'A';
-        System.out.println("meu char    "+letra);
+		//String pacote java lang objetive e não é uma estrutura de dado primitiva
+		//String cadeia de caractere
+		// char 1 caracter , 16 caractere, um unicode
+		char letra ='A';
+		System.out.println("meu char" + letra);
 
-        //1 bit
-        boolean javaELegal = true;
-        System.out.println("meu boolean   "+ javaELegal);
+		//verdade ou mentira
+		//1 bit
+		boolean javaELegal = true;
+		System.out.println("meu boolean" + javaELegal);
 
+		//uso: int > double >= long
 
     }
 
