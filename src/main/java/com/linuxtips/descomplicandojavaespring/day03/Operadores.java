@@ -4,11 +4,11 @@ public class Operadores {
 
     public static void main(String[] args) {
 
-        //atribuicao
+        //operador de atribuicao
         int idade = 25;
         System.out.println("valor atribuido a idade   " + idade);
 
-        //matematicos
+        //operadores matematicos
         int soma = 25 + 5;
         System.out.println("resultado da soma   " + soma);
         int multiplicacao = soma * 2;
@@ -18,12 +18,11 @@ public class Operadores {
         int modulo = divisao % 4;
         System.out.println("resultado do  modulo    " + modulo);
 
-        //incremento e decremento
+        //Operador de incremento e decremento
         int incremento = 15;
         System.out.println("Valor original antes do incremente= " + incremento);
         incremento++;
         System.out.println("Valor apos o incremento++ = " + incremento);
-
 
         int decremento = 20;
         System.out.println("Valor original antes do decremento= " + decremento);
