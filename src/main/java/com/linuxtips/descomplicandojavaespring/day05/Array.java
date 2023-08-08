@@ -6,7 +6,8 @@ import java.util.List;
 public class Array {
 
     public static void main(String[] args) {
-        // estrutura de dados simples para armazenar uma coleção de elementos
+        // Estrutura de Dados simples para armazenar uma coleção de elementos
+        // nao é um dado primitivo
 
         //forma mais comum de declarar arrays
         int[] arrayDeInt;
@@ -21,27 +22,30 @@ public class Array {
         Integer[] arrayDeInt4 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
 
-        //descobrindo o tamanho do array
+        //descobrindo o tamanho do array ()
         int arraySize = arrayDeInt4.length;
-        System.out.println("O Tamanho do array é " + arraySize);
+        System.out.println("A quatidade de itens é " + arraySize);
 
 
         //percorrendo um array
+        // precisa transformar os itens do array em listas
         List<Integer> itens = Arrays.asList(arrayDeInt4);
-        itens.forEach(System.out::println);
+        itens.forEach(System.out::println); //java 8 method reference (::) forma funcional de chamar um metodo
+
+
 
         //copiando um array - copyOfRange
         String[] treinamento = new String[]{"treinamento", "descomplicando", "java", "e", "spring", "da", "linux", "tips"};
-        String[] treinamentoNome = Arrays.copyOfRange(treinamento, 1, 5);
-        List<String> treinamentoList = List.of(treinamento);
+        String[] treinamentoNome = Arrays.copyOfRange(treinamento, 1, 5); //array comeca em zero <5 {descomplicando java e spring} 
+        List<String> treinamentoList = List.of(treinamento); //outra forma de converter array pra lista List.of
         List<String> treinamentoNomeList = List.of(treinamentoNome);
         treinamentoList.forEach(System.out::println);
         treinamentoNomeList.forEach(System.out::println);
 
 
-        //copiando um array - copyOf
+        //copiando um array - copyOf - nao escolhe o range escolhe
         String[] arrayCom2 = Arrays.copyOf(treinamentoNome,2);
-        List<String> arrayCom2List = List.of(arrayCom2);
+        List<String> arrayCom2List = List.of(arrayCom2); //pra imprimir no console transforma arrayCom2 em lista
         arrayCom2List.forEach(System.out::println);
 
 
@@ -57,29 +61,12 @@ public class Array {
         //validando se dois arrays são iguais - equals
         int[] arraydeInt1 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         int[] arraydeInt2 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 11};
-        System.out.println("Os arrays são iguais: " +
-                Arrays.equals(arraydeInt1, arraydeInt2));
+        System.out.println("Os arrays são iguais: " + Arrays.equals(arraydeInt1, arraydeInt2));
 
-        //ordenando arrays - sorted
-        String[] sorted = Arrays.copyOf(treinamento, 5);
-        Arrays.sort(sorted);
+        //ordenando arrays - sorted (ordenacao)
+        String[] sorted = Arrays.copyOf(treinamento, 5); //cria o array sorted com os valores
+        Arrays.sort(sorted); //ordena em ordem alfabetica o sort em 
         List<String> sortedList = List.of(sorted);
         sortedList.forEach(System.out::println);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
-
-
 }
