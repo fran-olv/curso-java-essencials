@@ -24,16 +24,13 @@ public class Estudante {
 
     public String estudar(){
         return "estou estudando na linux tips agora";
-
     }
+
+    //para aparecer no console trocar String por void e return por sysout
+    //public void estudar(){
+    //    System.out.println("estou estudando na linux tips agora"); 
+    //}
 
     public void dormir(){
-
     }
-
-
-
-
-
-
 }
