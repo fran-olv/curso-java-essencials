@@ -4,12 +4,12 @@ public class Pessoa {
 
     public static void main(String[] args) {
 
-        PessoaDesenvolderaBackend pessoaDesenvolderaBackend = new PessoaDesenvolderaBackend("kamilabackend", "java e spring", 10000.0);
+        PessoaDesenvolderaBackend pessoaDesenvolderaBackend = new PessoaDesenvolderaBackend("franbackend", "java e spring", 10000.0);
         pessoaDesenvolderaBackend.codar();
 
 
 
-        PessoaDesenvolvedoraFrontEnd pessoaDesenvolvedoraFrontEnd = new PessoaDesenvolvedoraFrontEnd("kamilafrontend", "javaescript", 10000.0);
+        PessoaDesenvolvedoraFrontEnd pessoaDesenvolvedoraFrontEnd =  new PessoaDesenvolvedoraFrontEnd("franfrontend", "javaescripto", 10000.0);
         pessoaDesenvolvedoraFrontEnd.codar();
 
 
